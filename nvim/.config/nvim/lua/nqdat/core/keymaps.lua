@@ -18,8 +18,8 @@ keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }
 
 -- buffer management
 keymap.set("n", "<leader>bo", "<cmd>tabnew<CR>", { desc = "Open new tab" })
-keymap.set("n", "<leader>bx", "<cmd>tabclose<CR>", { desc = "Close current tab" })
-keymap.set("n", "<leader>bn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
-keymap.set("n", "<leader>bp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
+keymap.set("n", "<leader>bx", "<cmd>bdelete<CR>", { desc = "Close current buffer" })
+keymap.set("n", "<leader>bn", "<cmd>bnext<CR>", { desc = "Go to next buffer" })
+keymap.set("n", "<leader>bp", "<cmd>bprevious<CR>", { desc = "Go to previous buffer" })
 keymap.set("n", "<leader>bf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
 keymap.set("n", "<leader>bd", ":BufOnly<CR>", { desc = "Close others tab" })
