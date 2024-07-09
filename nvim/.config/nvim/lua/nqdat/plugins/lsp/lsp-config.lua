@@ -87,6 +87,20 @@ return {
           },
         })
       end,
+      ["angularls"] = function()
+        local angularls_path = os.getenv("NODE_PATH") .. "/@angular/language-server"
+
+        local cmd =
+          { "ngserver", "--stdio", "--tsProbeLocations", angularls_path, "--ngProbeLocations", angularls_path }
+
+        lspconfig["angularls"].setup({
+          capabilities = capabilities,
+          cmd = cmd,
+          on_new_config = function(new_config, new_root_dir)
+            new_config.cmd = cmd
+          end,
+        })
+      end,
     })
   end,
 }
