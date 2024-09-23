@@ -25,6 +25,8 @@
 - Install tmux
   ```bash
   brew install tmux
+  # install tpm
+  git clone https://github.com/tmux-plugins/tpm $XDG_CONFIG_HOME/tmux/plugins/tpm
   ```
 
 - Install GNU software
