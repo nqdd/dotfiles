@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# setup nerd font
+# setup nerd fonts
 
 fonts_list=(
   font-3270-nerd-font
