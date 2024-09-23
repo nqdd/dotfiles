@@ -23,7 +23,7 @@ return {
       ensure_installed = {
         "html",
         "cssls",
-        "tsserver",
+        "ts_ls",
         "angularls",
         "lua_ls",
         "jsonls",
